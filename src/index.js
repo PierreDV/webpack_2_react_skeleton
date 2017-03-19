@@ -1,12 +1,7 @@
-import _ from 'lodash';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-function component () {
-  var element = document.createElement('div');
+import App from './components/app';
 
-  /* lodash is required for the next line to work */
-  element.innerHTML = _.join(['Webpack','2','Skeleton'], ' ');
-
-  return element;
-}
-
-document.body.appendChild(component());
+// Take componenent's generated HTML and put it in the DOM
+ReactDOM.render(<App />, document.querySelector('.container'));
