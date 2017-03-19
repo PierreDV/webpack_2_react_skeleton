@@ -4,15 +4,23 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --open"
+    "start": "./node_modules/.bin/webpack-dev-server --open",
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "test:watch": "npm run test -- --watch"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
     "babel-loader": "^7.*",
     "babel-preset-env": "^1.2.2",
     "babel-preset-react": "^6.23.0",
+    "chai": "^3.5.0",
+    "chai-jquery": "^2.0.0",
+    "jquery": "^3.2.0",
+    "jsdom": "^9.12.0",
+    "mocha": "^3.2.0",
     "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.2"
+    "webpack-dev-server": "^2.4.2",
+    "react-addons-test-utils": "^15.4.2"
   },
   "dependencies": {
     "react": "^15.4.2",
