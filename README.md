@@ -7,8 +7,10 @@ Use yarn or npm to install and start.
 
 ```
 yarn
+// npm install
 
 yarn run start
+// npm run start
 ```
 
 ### Testing
@@ -16,6 +18,8 @@ Test setup is based on Stephen Grider's [Redux Boilerplate](https://github.com/S
 
 ```
 yarn run test
+// npm run test
 
 yarn run test -- --watch
+// npm run test -- --watch
 ```
