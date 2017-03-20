@@ -4,8 +4,6 @@ Boilerplate package built with Webpack 2 that includes Reactjs.
 
 Use yarn or npm to install and start.
 
-Test setup is based on Stephen Grider's [Redux Boilerplate](https://github.com/StephenGrider/ReduxSimpleStarter).
-
 ```
 yarn
 
@@ -15,3 +13,5 @@ yarn run test
 
 yarn run test -- --watch
 ```
+
+Test setup is based on Stephen Grider's [Redux Boilerplate](https://github.com/StephenGrider/ReduxSimpleStarter).
