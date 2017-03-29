@@ -12,11 +12,11 @@ global.window = global.document.defaultView;
 const $ = jquery(global.window);
 
 // helper for rendering React components
-function renderComponent(ComponentClass, props) {
+function renderComponent(Component, props) {
   // use spread operator so props shows up as top level properties
   const componentInstance = TestUtils.renderIntoDocument(
     <div>
-      <ComponentClass {...props} />
+      <Component {...props} />
     </div>
   );
   //this line is what produces the HTML
