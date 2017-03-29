@@ -14,8 +14,11 @@ const $ = jquery(global.window);
 // helper for rendering React components
 function renderComponent(ComponentClass, props) {
   // use spread operator so props shows up as top level properties
-  const componentInstance = TestUtils.renderIntoDocument(<ComponentClass {...props} />);
-
+  const componentInstance = TestUtils.renderIntoDocument(
+    <div>
+      <ComponentClass {...props} />
+    </div>
+  );
   //this line is what produces the HTML
   return $(ReactDOM.findDOMNode(componentInstance));
 }

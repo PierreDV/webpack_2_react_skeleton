@@ -1,4 +1,4 @@
-# Webpack 2 React Skeleton
+# Webpack React Skeleton
 
 Boilerplate package built with Webpack 2 that includes Reactjs.
 
