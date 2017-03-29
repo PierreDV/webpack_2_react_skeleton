@@ -20,7 +20,7 @@ function renderComponent(Component, props) {
     </div>
   );
   //this line is what produces the HTML
-  return $(ReactDOM.findDOMNode(componentInstance));
+  return $(ReactDOM.findDOMNode(componentInstance).children[0]);
 }
 
 // Build helper for simulating events
